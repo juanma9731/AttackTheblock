@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/*Estilo propio*/
+html{
+	background-color:#000;
+}
+#contenedor{
+width: 100%;	
+}
+a {
+font-family:"opens";
+	font-size: 15px;
+	color:#24dbe1;
+	text-decoration:none;
+	border-right: 0px;
+}
+
+li{	
+	height:16px;
+	float:left;
+	padding-right:4px;
+	margin-top:10px;
+	margin:5px;
+	display:inline;
+	border-right: 1px solid;
+	border-right-color: white;	
+}
+
+#top{
+   /* width:45%;*/
+	margin-top:5%;
+	margin-left:50%;
+	
+	
+}
+
+#pelicula{
+	
+	text-align:center;
+	margin:50px auto;	
+}
+
+
+#ficha{	
+	margin-left:20%;	
+	width:35%;
+	float:left;
+	margin-right:20px;
+	font-family:"comic";
+	
+
+}
+
+#fichat{
+	font-family:"crimes";
+	font-size: 3em;
+	
+}
+#fotos{
+	
+	margin-left:15%;
+	background-color:#000;
+	width:65%;	
+}
+li{	
+	padding:5px;
+	height:16px;
+	float:left;
+	padding-right:4px;
+	margin-top:10px;
+	margin:5px;
+	display:inline;
+	border: 1px solid;
+	border-color:#68ffff;	
+}
+
+
+
+h4{
+	font-family:"opens";
+	font-size: 1.2em;
+color:#24dbe1;
+	
+}
+
+h3{
+	font-family:"opens";
+	font-size: 1.5em;
+	color:#24dbe1;
+}
+
+h2{
+	font-family:"opens";
+	font-size: 2em;
+	color:#24dbe1;
+}
+
+h1{
+	font-family:"crimes";
+	font-size:4em;
+	color:#24dbe1;
+}
+section{
+   width:50%;
+   /*margin:20px auto;*/
+    margin-right:100px;
+    margin-left:15%;
+	border: 1px solid;
+	border-color: #68ffff; 
+	clear:both;
+	padding:5px;
+}
+#referencias{
+	height:30%;
+    border-top: 1px solid;
+    border-bottom:1px solid;
+	border-color: #68ffff; 
+	-webkit-column-count: 3;
+    -moz-column-count: 3;
+    -o-column-count: 3;
+         /*Espacio entre columnas*/
+    column-gap: 2em;
+    -webkit-column-gap: 2em;
+    -moz-column-gap: 2em;
+    -o-column-gap: 2em;
+    /*Agrega una barra solida de color*/
+    column-rule: 2px solid #666;
+    -webkit-column-rule: 2px solid #666;
+    -moz-column-rule: 2px solid #666;
+    -o-column-rule: 2px solid #666;
+}
+
+#referencias h2{
+	font-family: "helvetica";
+	font-size: 2em;
+	
+}
+
+#referencias p{
+	font-family:"opens";
+	font-size:  0.7em;
+	color:#24dbe1;
+}
+
+
+
+#referencias a{
+	font-family:"opens";
+	font-size: 1em;
+	color:#24dbe1;
+}
+
+
+img{
+	width:45%;
+	margin:0px auto;
+	box-shadow:#e8e3c3 5px  5px   10px;
+}
+
+
+
+#fotos{
+	
+	margin-left:15%;
+	background-color:#000;
+	width:75%;	
+	height:40%;
+}
+#imagen{
+	width: 90%;
+	margin-left:5%;
+	margin-right: 5%;
+	
+}
+
+iframe{
+	width:80%;
+	height:300px;
+}
+
+a {
+font-family:"opens";
+	font-size: 1em;
+	color:#24dbe1;
+	text-decoration:none;
+	border-right: 0px;
+}
+#top a{
+	font-size: 0.8em;
+	font-family:"opens";
+}
+
+footer{	
+	background-color: #000;
+	width: 100%;
+	box-shadow:#888 10px  0px   20px;
+}
+@media only screen and (max-width:1000px) {
+    /* Style adjustments for viewports that meet the condition */
+    #ficha{
+    width: 100%}
+    #top{
+    clear:both;
+    margin-left:10%;
+    width: 100%;
+    
+    
+    }
+    #referencias h2{
+    font-size: 1em;
+    }
+}
+p{
+	font-family:"opens";
+	font-size: 1em;
+	color:#24dbe1;	
+}
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+@font-face{
+	font-family:"opens";
+	src:url("OpenSans-Regular.ttf");
+}
+
+@font-face{
+	font-family:"crimes";
+	src:url("Crimes Times Six.ttf");
+}
